@@ -1,10 +1,11 @@
 public class Client {
 
-    String firstName;
-    String lastName;
-    String email;
-    String phone;
-    String address;
+    private String id;
+    public String firstName;
+    public String lastName;
+    public String email;
+    public String phone;
+    public String address;
 
     public Client() {
     }
@@ -16,6 +17,10 @@ public class Client {
       this.email     = email;
       this.phone     = phone;
       this.address   = address;
+    }
+
+    public boolean hasId( String id ) {
+      return id == expectedId;
     }
 
     public void setFirstName( String firstName ) {
@@ -51,7 +56,7 @@ public class Client {
     public String getContact() {
       String contact = "Phone: " + this.phone + "\n" +
           "Email: "   + this.email  + "\n" +
-          "Address: " + this.address; 
+          "Address: " + this.address;
       return contact;
     }
 
