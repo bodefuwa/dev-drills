@@ -1,4 +1,14 @@
 # Church Management Application
+class Service
+  attr_reader :ministers, :members, :events
+
+  def initialize(args{})
+    @ministers = args[:ministers]
+    @members   = args[:members]
+    @events    = args[:events]
+  end
+end
+
 class Minister < Person
   attr_reader :ministry
 
