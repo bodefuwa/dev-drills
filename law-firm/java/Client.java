@@ -12,11 +12,11 @@ public class Client {
 
     public Client( String firstname, String lastName, String email, String phone,
       String address ) {
-      this.firstName = firstName;
-      this.lastName  = lastName;
-      this.email     = email;
-      this.phone     = phone;
-      this.address   = address;
+      setFirstName( firstName );
+      setLastName( lastName );
+      setEmail( email );
+      setPhone( phone );
+      setFirstName( address );
     }
 
     public boolean hasId( String id ) {
