@@ -61,11 +61,11 @@ public class Client {
     }
 
     public String toString() {
-      client =  "First Name: " + getFirstName + "\n"
-                "Last Name: "  + getLastName  + "\n"
-                "Email: "      + getEmail     + "\n"
-                "Phone: "      + getPhone     + "\n"
-                "Address: "    + getAddress;
+      client =  "First Name: " + getFirstName() + "\n"
+                "Last Name: "  + getLastName()  + "\n"
+                "Email: "      + getEmail()     + "\n"
+                "Phone: "      + getPhone()     + "\n"
+                "Address: "    + getAddress();
       return client;
     }
 }
