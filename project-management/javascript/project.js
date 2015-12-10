@@ -1,8 +1,9 @@
 class Project {
-  constructor(name, status, team, ) {
-    this.name     = name;
-    this.status   = status;
-    this.team     = team;
+  constructor(name, status, team, components) {
+    this.name       = name;
+    this.status     = status;
+    this.team       = team;
+    this.components = components;
   }
 
   getName() {
@@ -17,10 +18,15 @@ class Project {
     return this.team;
   }
 
+  getComponents() {
+    return this.components;
+  }
+
   getProjectDetails() {
-    return 'Project name: ' + this.name + ' ' +
-           'Project status: ' + this.status + ' ' +
-           'Project team: ' + this.team;
+    return 'Project name: ' + this.name + '\n' +
+           'Project status: ' + this.status + '\n ' +
+           'Project team: ' + this.team + '\n' +
+           'Project components': + this.components;
   }
 
   toString() {
